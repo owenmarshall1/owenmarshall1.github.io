@@ -36,7 +36,7 @@ document.getElementById('noButton').addEventListener('click', () => {
 });
 
 document.getElementById('tryAgain').addEventListener('click', () => {
-    currentMessageIndex = 1;
+    currentMessageIndex = 0;
     messageElement.textContent = messages[currentMessageIndex];
     messageElement.style.opacity = 1;
     buttonContainer.classList.add('hidden');
