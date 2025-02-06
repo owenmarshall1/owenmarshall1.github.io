@@ -5,7 +5,7 @@ const messages = [
     "I have something to ask you...",
     "Will you be my Valentine?"
 ];
-let currentMessageIndex = 0;
+let currentMessageIndex = 1;
 
 function showNextMessage() {
     messageElement.textContent = messages[currentMessageIndex];
@@ -36,7 +36,7 @@ document.getElementById('noButton').addEventListener('click', () => {
 });
 
 document.getElementById('tryAgain').addEventListener('click', () => {
-    currentMessageIndex = 0;
+    currentMessageIndex = 1;
     messageElement.textContent = messages[currentMessageIndex];
     messageElement.style.opacity = 1;
     buttonContainer.classList.add('hidden');
