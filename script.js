@@ -36,10 +36,19 @@ document.getElementById('noButton').addEventListener('click', () => {
 });
 
 document.getElementById('tryAgain').addEventListener('click', () => {
-    currentMessageIndex = 0;
+    reset();
+});
+
+document.getElementById('restart').addEventListener('click', () => {
+    reset();
+});
+
+function reset(){
+currentMessageIndex = 0;
     messageElement.textContent = messages[currentMessageIndex];
     messageElement.style.opacity = 1;
     buttonContainer.classList.add('hidden');
     no.classList.add('hidden');
+    yes.classList.add('hidden');
     gifContainer.classList.remove('hidden');
-});
+}
